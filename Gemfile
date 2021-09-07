@@ -28,8 +28,10 @@ gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.4', require: false
 
 gem 'bootstrap', '~> 5.1.0'
-gem 'jquery-rails'
 gem "font-awesome-rails"
+gem 'jquery-rails'
+gem "haml-rails", "~> 2.0"
+
 
 
 
