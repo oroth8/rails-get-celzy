@@ -49,6 +49,10 @@
           = link_to destroy_user_session_path, method: :delete, class: 'nav-link' do
             .fa.fa-sign-out-alt
             %b Sign out
+        -# %li.nav-item
+        -#   .fa.fa-user
+        -#   %b= current_user
+
     - else
       %ul.navbar-nav
         %li.nav-item= link_to 'Sign Up', new_user_registration_path, class: 'nav-link'
