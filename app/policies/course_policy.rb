@@ -14,12 +14,12 @@ class CoursePolicy < ApplicationPolicy
   end
 
   def create? 
-    @user.has_role? :teacher
+    @user.has_role?(:admin || :teacher)
   end
   def destroy? 
     @user.has_role? :admin
   end
   def new? 
-    @user.has_role? :teacher
+    @user.has_role?(:admin || :teacher)
   end
 end
