@@ -20,6 +20,6 @@ class CoursePolicy < ApplicationPolicy
     @user.has_role? :admin
   end
   def new? 
-    @user.has_role?(:admin || :teacher)
+    @user.has_role?(:admin || :teacher || @record.user_id == @user.id)
   end
 end
